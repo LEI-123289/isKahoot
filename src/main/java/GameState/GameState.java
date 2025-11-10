@@ -1,5 +1,7 @@
 package GameState;
 
+import LeituraPerguntas.*;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -14,6 +16,7 @@ public class GameState {
         this.perguntas = perguntas;
         this.indicePergunta = -1;
         this.equipas = new ArrayList<>();
+
     }
 
     private Equipa findOrCreateEquipa(String nomeEquipa) {

@@ -2,6 +2,9 @@ package GUI;
 
 import javax.swing.*;
 import java.awt.*;
+import LeituraPerguntas.CarregadorPerguntas;
+import LeituraPerguntas.Pergunta;
+import java.util.List;
 
 /**
  * O "Palco" (JFrame) que gere todos os "Cenários" (JPanels) do jogo.
@@ -18,6 +21,7 @@ public class JanelaPrincipal {
 
     private PainelAguarda painelAguarda;
     private PainelJogo painelJogo;
+    private List<Pergunta> listaDePerguntas;
 
     public JanelaPrincipal(String ip, String port, String jogo, String equipa, String user) {
         frame = new JFrame("isKahoot - Jogo");
@@ -30,6 +34,9 @@ public class JanelaPrincipal {
 
         painelAguarda = new PainelAguarda(this, ip, port, jogo, equipa, user);
         painelJogo = new PainelJogo(this);
+
+        CarregadorPerguntas carregador = new CarregadorPerguntas();
+        this.listaDePerguntas = carregador.carregarPerguntas("perguntas.json");
 
         painelContentor.add(painelAguarda, PAINEL_AGUARDA);
         painelContentor.add(painelJogo, PAINEL_JOGO);
