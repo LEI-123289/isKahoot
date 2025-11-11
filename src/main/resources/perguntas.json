@@ -1,0 +1,31 @@
+{
+  "quizzes": [
+    {
+      "name": "PCD-Quiz-1",
+      "questions": [
+        {
+          "question": "Qual é o método correto para iniciar a execução de uma nova Thread em Java?",
+          "points": 5,
+          "correct": 1,
+          "options": [
+            "run()",
+            "start()",
+            "begin()",
+            "execute()"
+          ]
+        },
+        {
+          "question": "O que é uma 'Race Condition'?",
+          "points": 5,
+          "correct": 3,
+          "options": [
+            "Quando uma thread corre mais rápido que outra.",
+            "Um erro de compilação em código concorrente.",
+            "Uma competição de threads para usar a rede.",
+            "Um problema onde o resultado depende da ordem de execução das threads."
+          ]
+        }
+      ]
+    }
+  ]
+}

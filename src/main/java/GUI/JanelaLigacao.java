@@ -50,7 +50,6 @@ public class JanelaLigacao {
     }
 
     private void onLigarClicado() {
-        // 1. Obter os dados
         String ip = ipField.getText();
         String port = portField.getText();
         String jogo = jogoField.getText();
@@ -62,7 +61,6 @@ public class JanelaLigacao {
         JanelaPrincipal janelaPrincipal = new JanelaPrincipal(ip, port, jogo, equipa, user);
         janelaPrincipal.mostrar();
 
-        // 3. Fechar esta janela de login
         frame.dispose();
     }
 

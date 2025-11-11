@@ -21,7 +21,7 @@ public class PainelAguarda extends JPanel {
 
         JButton skipButton = new JButton("Skip (Debug)");
         skipButton.addActionListener(e -> {
-            janelaPrincipal.mostrarPainel(JanelaPrincipal.PAINEL_JOGO);
+            janelaPrincipal.mostrarProximaPergunta();
         });
 
         JPanel southPanel = new JPanel(); // Painel para o botão
